@@ -12,3 +12,9 @@ kubectl port-forward svc/argocd-server -n argocd 8080:80
 # open http://localhost:8080 in your browser
 # username: admin
 # password: <this_is_the_password_you_just_got>
+
+# install Argo CD NGINX app
+ kubectl apply -f argocd/app.yaml
+
+# connect to NGINX app
+kubectl -n nginx port-forward svc/nginx 8081:80
