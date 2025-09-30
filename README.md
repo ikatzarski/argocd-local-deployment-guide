@@ -22,7 +22,7 @@ Create a local Kind cluster:
 Install ArgoCD in the cluster:
 
 ```bash
- ./install.sh --install-argocd
+./install.sh --install-argocd
 ```
 
 Get the ArgoCD login credentials:
